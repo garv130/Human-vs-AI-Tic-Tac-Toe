@@ -18,6 +18,8 @@ public class board {
             for (int j = 0; j < size; j++){
                 System.out.print(board[i][j] + " | ");
             }
+            // To get to new line 
+            System.out.println();
           }
         } 
 }
