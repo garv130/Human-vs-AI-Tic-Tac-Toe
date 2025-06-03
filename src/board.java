@@ -13,10 +13,10 @@ public class board {
     public void printBoard(){
         // Loop through each row
           for (int i = 0; i < size; i++){
-            System.out.print("|");
+            System.out.print("| ");
          // Loop through each column in the current row
             for (int j = 0; j < size; j++){
-                System.out.print("|");
+                System.out.print(board[i][j] + " | ");
             }
           }
         } 
