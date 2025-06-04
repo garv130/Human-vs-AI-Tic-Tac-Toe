@@ -36,4 +36,8 @@ public class board {
          //Otherwise false is returned
          return false;
         }
+
+     //public boolean checkWin(char symbol){
+        // Check if they win first with rows, then columns, then diagonal
+    //}    
  }
