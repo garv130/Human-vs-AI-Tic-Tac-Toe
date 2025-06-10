@@ -13,4 +13,12 @@ public class humanplayer implements player{
         return symbol;
     }
 
+    public void makeMove(board board) {
+        boolean success = false;
+        while (!success){
+            System.out.println("Player " + symbol + ", enter your move (row and column 0–2):");
+        }
+
+    }
+
 }
