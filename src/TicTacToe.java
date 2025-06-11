@@ -7,7 +7,7 @@ public class TicTacToe {
         Board board = new Board();
         Random rand = new Random();
 
-        System.out.print("Do you want to be X or O? (X goes first): ");
+        System.out.print("Do you want to be X or O? ");
         char symbol = scanner.nextLine().trim().toUpperCase().charAt(0);
 
         while (symbol != 'X' && symbol != 'O') {
