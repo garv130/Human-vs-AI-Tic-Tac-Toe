@@ -56,5 +56,7 @@ public class TicTacToe {
         } else {
             //currentPlayer = ai;
         }
+        
+        board.printBoard();
     }
 }
