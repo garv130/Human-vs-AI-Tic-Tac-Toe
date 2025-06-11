@@ -56,7 +56,10 @@ public class TicTacToe {
         } else {
             //currentPlayer = ai;
         }
-        
+
         board.printBoard();
+
+        //For the main game loop
+        boolean gameOver = false;
     }
 }
