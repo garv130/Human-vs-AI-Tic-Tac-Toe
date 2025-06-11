@@ -35,5 +35,26 @@ public class TicTacToe {
             System.out.print("Invalid input. Please enter 1 or 2: ");
             guess = scanner.nextInt();
         }
+
+        boolean playerGoesFirst;
+        if (guess == correctNumber) {
+            System.out.println("You guessed right! You go first.");
+            playerGoesFirst = true;
+        } else {
+            System.out.println("🤖 AI goes first.");
+            playerGoesFirst = false;
+        }
+
+        //Creating One Human Player the other will be AI ADD LATER
+        Player human = new HumanPlayer(symbol);
+        //Player ai = new aiPlayer (aiSymbol);
+
+        // Set who goes first
+        Player currentPlayer;
+        if (playerGoesFirst) {
+            currentPlayer = human;
+        } else {
+            //currentPlayer = ai;
+        }
     }
 }
