@@ -29,5 +29,11 @@ public class TicTacToe {
 
         System.out.print("Guess a number (1 or 2) to decide who goes first: ");
         int guess = scanner.nextInt();
+
+
+        while (guess != 1 && guess != 2) {
+            System.out.print("Invalid input. Please enter 1 or 2: ");
+            guess = scanner.nextInt();
+        }
     }
 }
