@@ -41,7 +41,7 @@ public class TicTacToe {
             System.out.println("You guessed right! You go first.");
             playerGoesFirst = true;
         } else {
-            System.out.println("🤖 AI goes first.");
+            System.out.println("AI goes first.");
             playerGoesFirst = false;
         }
 
