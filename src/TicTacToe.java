@@ -7,10 +7,17 @@ public class TicTacToe {
 
         System.out.print("Do you want to be X or O? (X goes first): ");
         char symbol = scanner.nextLine().trim().toUpperCase().charAt(0);
-    
+
         while (symbol != 'X' && symbol != 'O') {
             System.out.print("Invalid input. Please enter X or O: ");
             symbol = scanner.nextLine().trim().toUpperCase().charAt(0);
+        }
+
+        char aiSymbol;
+        if (symbol == 'X') {
+            aiSymbol = 'O';
+        } else {
+            aiSymbol = 'X';
         }
     }
 }
