@@ -25,7 +25,7 @@ public class board {
     
     public boolean spotMarker(int row, int col, char symbol){
         //Make sure the row and column are valid 
-        if (row >= 0 && row < size && col >=0 && col > size){
+        if (row >= 0 && row < size && col >=0 && col < size){
             //Check if the spot is open
             if(board[row][col] == ' '){
             // If yes then put the symbol there
