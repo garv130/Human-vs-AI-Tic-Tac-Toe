@@ -74,6 +74,14 @@ public class TicTacToe {
                 System.out.println("It's a draw!");
                 gameOver = true;
             }
+            else {
+                if (currentPlayer == human) {
+                    //currentPlayer = //ai;
+                } 
+                else {
+                    currentPlayer = human;
+                }
+            }
         }
     }
 }
