@@ -70,6 +70,10 @@ public class TicTacToe {
                 System.out.println(" Player " + currentPlayer.getSymbol() + " wins!");
                 gameOver = true;
             }
+            else if (board.isFull()) {
+                System.out.println("It's a draw!");
+                gameOver = true;
+            }
         }
     }
 }
