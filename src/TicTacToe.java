@@ -50,7 +50,7 @@ public class TicTacToe {
         //Player ai = new aiPlayer (aiSymbol);
 
         // Set who goes first
-        Player currentPlayer;
+        Player currentPlayer = null;
         if (playerGoesFirst) {
             currentPlayer = human;
         } else {
@@ -61,5 +61,15 @@ public class TicTacToe {
 
         //For the main game loop
         boolean gameOver = false;
+
+        while (!gameOver) {
+            currentPlayer.makeMove(board);
+            board.printBoard();
+
+            if (board.checkWin(currentPlayer.getSymbol())) {
+                System.out.println(" Player " + currentPlayer.getSymbol() + " wins!");
+                gameOver = true;
+            }
+        }
     }
 }
