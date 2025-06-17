@@ -73,4 +73,9 @@ public class board {
         }
         return true;
     }
+
+    // Needed for the AI Player
+    public char[][] getBoard() {
+    return board;
+}
  }
