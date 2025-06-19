@@ -1,9 +1,9 @@
-public class ChatGPTPlayer implements Player {
+public class AIPlayer implements Player {
     private static final String apiKey = "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";
     private static final String api_URL = "https://api.openai.com/v1/chat/completions";
     private char symbol;
 
-    public ChatGPTPlayer(char symbol) {
+    public AIPlayer(char symbol) {
         this.symbol = symbol;
     }
 
