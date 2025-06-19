@@ -1,3 +1,6 @@
+import com.google.genai.Client;
+import com.google.genai.types.GenerateContentResponse;
+
 public class AIPlayer implements Player {
     private char symbol;
 
