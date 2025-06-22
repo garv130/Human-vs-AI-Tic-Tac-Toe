@@ -24,12 +24,10 @@ public class TicTacToe {
 
         System.out.println("You are " + symbol + ". AI is " + aiSymbol + ".");
         
-        //Guessing number system to decide who goes first
         int correctNumber = rand.nextInt(2) + 1;
 
         System.out.print("Guess a number (1 or 2) to decide who goes first: ");
         int guess = scanner.nextInt();
-
 
         while (guess != 1 && guess != 2) {
             System.out.print("Invalid input. Please enter 1 or 2: ");
@@ -41,25 +39,26 @@ public class TicTacToe {
             System.out.println("You guessed right! You go first.");
             playerGoesFirst = true;
         } else {
-            System.out.println("AI goes first.");
+            System.out.println("🤖 AI goes first.");
             playerGoesFirst = false;
         }
 
-        //Creating One Human Player the other will be AI ADD LATER
-        Player human = new HumanPlayer(symbol);
-        //Player ai = new aiPlayer (aiSymbol);
 
-        // Set who goes first
+
+        
+        Player human = new HumanPlayer(symbol);
+        Player ai = new AIPlayer (aiSymbol);
+
+        
         Player currentPlayer = null;
         if (playerGoesFirst) {
             currentPlayer = human;
         } else {
-            //currentPlayer = ai;
+            currentPlayer = ai;
         }
 
         board.printBoard();
 
-        //For the main game loop
         boolean gameOver = false;
 
         while (!gameOver) {
@@ -76,7 +75,7 @@ public class TicTacToe {
             }
             else {
                 if (currentPlayer == human) {
-                    //currentPlayer = //ai;
+                    currentPlayer = ai;
                 } 
                 else {
                     currentPlayer = human;

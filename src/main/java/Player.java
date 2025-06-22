@@ -1,4 +1,4 @@
-public interface player {
-    void makeMove(board board);
+public interface Player {
+    void makeMove(Board board);
     char getSymbol();
 }

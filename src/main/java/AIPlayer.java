@@ -2,6 +2,7 @@ import com.google.genai.Client;
 import com.google.genai.types.GenerateContentResponse;
 
 public class AIPlayer implements Player {
+    
     private char symbol;
 
     public AIPlayer(char symbol) {
@@ -77,4 +78,5 @@ public class AIPlayer implements Player {
 
         return currentBoard;
     }
+
 }
