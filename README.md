@@ -1,3 +1,9 @@
+Welcome to my Human vs AI Tic Tac Toe Game!!!
+
+This is a terminal-based Tic-Tac-Toe game built in Java where a human player competes against an AI opponent powered by Google's Gemini AI API. The AI makes decisions based on player input and provides a smart, engaging challenge.
+
+
+
 Setup Instructions after you have cloned the project and opened it in your own IDE
 
 Step 1: Get a Gemini API Key
